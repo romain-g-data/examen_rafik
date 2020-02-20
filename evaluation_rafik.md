@@ -3,10 +3,10 @@ partie 1 -REQUETE SQL
 
 **1**
 
-	from re import sub
+		from re import sub
 
 
-liste = 'code (insee)	mode de scrutin	numliste	code (nuance de la liste)	numéro du candidat dans la liste	tour	nom	prénom	sexe	Date de naissance	code (profession)	libellé profession	nationalité' 
+		liste = 'code (insee)	mode de scrutin	numliste	code (nuance de la liste)	numéro du candidat dans la liste	tour	nom	prénom	sexe	Date de naissance	code (profession)	libellé profession	nationalité' 
 
 
 		def r_names(liste):
@@ -25,14 +25,14 @@ liste = 'code (insee)	mode de scrutin	numliste	code (nuance de la liste)	numéro
 
 **2**
 
-listepropre3 =r_names(liste)
-
-def parse_dates(listepropre3):
-    for i in range (0, len(listepropre3)):
-        if listepropre3[i][0:4]=='Date':
-            return listepropre3[i]
-
-print(parse_dates(listepropre3))
+>listepropre3 =r_names(liste)
+>
+>def parse_dates(listepropre3):
+>    for i in range (0, len(listepropre3)):
+>        if listepropre3[i][0:4]=='Date':
+>            return listepropre3[i]
+>
+>print(parse_dates(listepropre3))
 
 
 
