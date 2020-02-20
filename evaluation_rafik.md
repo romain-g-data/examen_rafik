@@ -26,12 +26,12 @@ partie 1 -REQUETE SQL
 **2**
 
 >listepropre3 =r_names(liste)
->
+
 >def parse_dates(listepropre3):
 >    for i in range (0, len(listepropre3)):
 >        if listepropre3[i][0:4]=='Date':
 >            return listepropre3[i]
->
+
 >print(parse_dates(listepropre3))
 
 
