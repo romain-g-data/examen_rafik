@@ -3,21 +3,21 @@ partie 1 -REQUETE SQL
 
 **1**
 
-(from re import sub
+	from re import sub
 
 
 liste = 'code (insee)	mode de scrutin	numliste	code (nuance de la liste)	numéro du candidat dans la liste	tour	nom	prénom	sexe	Date de naissance	code (profession)	libellé profession	nationalité' 
 
 
-def r_names(liste):
-    listepropre  = sub('[é,è]','e',liste)
-    listepropre1 = sub('[., ,\']','_',listepropre)
-    listepropre2 = sub('[(,)]','',listepropre1)
-    listepropre3 = listepropre2.split('\t') 
-    
-    return listepropre3
-
-print(r_names(liste))    )
+		def r_names(liste):
+		    listepropre  = sub('[é,è]','e',liste)
+		    listepropre1 = sub('[., ,\']','_',listepropre)
+		    listepropre2 = sub('[(,)]','',listepropre1)
+		    listepropre3 = listepropre2.split('\t') 
+		    
+		    return listepropre3
+		
+		print(r_names(liste))
 
 
 
