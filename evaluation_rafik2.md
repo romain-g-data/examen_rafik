@@ -25,14 +25,14 @@ partie 1 -REQUETE SQL
 
 **2**
 
-		listepropre3 =r_names(liste)
+>listepropre3 =r_names(liste)
 
-		def parse_dates(listepropre3):
-			for i in range (0, len(listepropre3)):
-				if listepropre3[i][0:4]=='Date':
-					return listepropre3[i]
+>def parse_dates(listepropre3):
+>    for i in range (0, len(listepropre3)):
+>        if listepropre3[i][0:4]=='Date':
+>            return listepropre3[i]
 
-		print(parse_dates(listepropre3))
+>print(parse_dates(listepropre3))
 
 
 
@@ -57,7 +57,7 @@ USE KNE
 
 
 
-'''CREATE TABLE IF NOT EXISTS KNE.`categorie` (
+CREATE TABLE IF NOT EXISTS KNE.`categorie` (
   `idcategorie` INT(11) NOT NULL,
   `Code` INT(5) NULL,
   `Nb d'emplois au lieu de travail (LT) 2016` VARCHAR(6) NULL,
@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `KNE`.`villes` (
   `vi_name` VARCHAR(45) NULL,
   PRIMARY KEY (`vi_id`))
 
-DEFAULT CHARACTER SET = latin1;'''
+DEFAULT CHARACTER SET = latin1;
 
 
 **5**
